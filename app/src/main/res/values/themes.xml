@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ImpulseResponse" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">#1c8408</item>
+         <item name="colorSecondary">#42C628</item>
+         <item name="colorAccent">#41f11f</item>
+    </style>
+
+    <style name="Theme.ImpulseResponse" parent="Base.Theme.ImpulseResponse" />
+</resources>
