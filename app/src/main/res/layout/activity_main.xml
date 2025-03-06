@@ -136,16 +136,16 @@
         </LinearLayout>
 
         <TextView
-            android:visibility="gone"
+            android:visibility="visible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Choose Model"
+            android:text="Choose Impulse Response 1"
             android:textColor="@color/white"
             android:layout_margin="10dp"
             android:fontFamily="@font/audiowide"
             android:textSize="20dp"/>
         <LinearLayout
-            android:visibility="gone"
+            android:visibility="visible"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -170,13 +170,12 @@
         </LinearLayout>
 
         <Button
-            android:visibility="gone"
+            android:visibility="visible"
             android:id="@+id/load_nam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Load Model"
+            android:text="Load IR File"
             android:textColor="@color/white"
-            android:background="#00000000"
             android:fontFamily="@font/audiowide"
             android:textSize="20dp"
             android:layout_gravity="center"/>
@@ -184,7 +183,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Choose Impulse Response"
+            android:text="Choose Impulse Response 2"
             android:textColor="@color/white"
             android:layout_margin="10dp"
             android:fontFamily="@font/audiowide"
@@ -219,7 +218,6 @@
             android:layout_height="wrap_content"
             android:text="Load IR File"
             android:textColor="@color/white"
-            android:background="#00000000"
             android:fontFamily="@font/audiowide"
             android:textSize="20dp"
             android:layout_gravity="center"/>

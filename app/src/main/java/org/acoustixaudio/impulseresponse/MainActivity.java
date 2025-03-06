@@ -241,7 +241,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onActivityResult(Uri uri) {
                         // Handle the returned Uri
                         Log.i(TAG, "onActivityResult: " + uri);
-                        loadNAMModel(uri, "nam", namSpinner, 1);
+                        loadNAMModel(uri, "nam", namSpinner, 14);
                     }
                 });
 
@@ -310,7 +310,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        setSpinnerFromDir(namSpinner, context.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS) + "/nam", null);
+        setSpinnerFromDir(namSpinner, context.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS) + "/ir", null);
         namSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
@@ -321,11 +321,11 @@ public class MainActivity extends AppCompatActivity {
                 String dir = context.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS) + "/nam/" ;
                 Uri ri = Uri.parse("file://" + dir + m);
                 Log.d(TAG, String.format ("sending filename: %s", ri.getPath()));
-                for (int s = 0 ; s < 21 ; s ++) {
-                    Log.i(TAG, "onItemSelected: port " + s + ' ' + AudioEngine.getControlName(0, s));
-                }
+//                for (int s = 0 ; s < 21 ; s ++) {
+//                    Log.i(TAG, "onItemSelected: port " + s + ' ' + AudioEngine.getControlName(0, s));
+//                }
 
-                AudioEngine.setAtomPort(0, 17, ri.getPath());
+                AudioEngine.setAtomPort(0, 14, ri.getPath());
             }
 
             @Override
@@ -601,11 +601,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        proVersion = true;
+//        proVersion = true;
 
         if (proVersion) {
             findViewById(R.id.premium).setVisibility(GONE);
-            ((TextView) findViewById(R.id.title)).setText("Neural Amp Pro");
+            ((TextView) findViewById(R.id.title)).setText("IR Loader Premium");
         }
     }
 
